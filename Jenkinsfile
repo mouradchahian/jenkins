@@ -1,5 +1,6 @@
 pipeline {
     	agent any
+	def workspace = pwd()
 	stages {
 	    stage('Build'){
 		steps{
