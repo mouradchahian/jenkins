@@ -1,16 +1,6 @@
-pipeline {
-    	agent any
-	stages {
+node() {
 	    stage('Build'){
-		steps{
 		    checkout scm
 		    echo "mourad"
-		    script {
-			workspace = pwd()
-			echo workspace
-			git -v
-		   }
-		}
-	     }
-	}
+	    }
 }
