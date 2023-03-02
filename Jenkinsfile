@@ -5,17 +5,12 @@ pipeline {
 		steps{
 		    checkout scm
 		    echo "mourad"
+		    script {
+			workspace = pwd()
+			echo workspace
+			git -v
+		   }
 		}
 	     }
-	     stage('EnvInitialization') {
-		     tools { git "git2" }
-		     steps{
-			   script {
-				workspace = pwd()
-				echo workspace
-				git -v
-			   }
-		     }
-	   }
 	}
 }
