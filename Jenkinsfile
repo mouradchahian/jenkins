@@ -9,7 +9,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   sh "git clone git@github.com:mouradchahian/jenkins.git"
+			   bat "git clone git@github.com:mouradchahian/jenkins.git"
 		     }
 	   }
 	}
