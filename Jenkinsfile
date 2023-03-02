@@ -1,8 +1,5 @@
 pipeline {
     	agent any
-	tools {
-        	git "gitbin"
-    	}
 	stages {
 	    stage('Build'){
 		steps{
@@ -12,7 +9,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat "echo 'hello'"
+			   bat "git"
 		     }
 	   }
 	}
