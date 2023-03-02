@@ -1,7 +1,7 @@
 node() {
    stage('Build'){
 	checkout scm
-	cmd_exec('git clone https://github.com/devopshydclub/vprofile-project.git /temp/test')
+	cmd_exec('git clone https://github.com/devopshydclub/vprofile-project.git /tmp/test')
    }
 }
 def cmd_exec(command) {
