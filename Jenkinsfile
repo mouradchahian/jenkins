@@ -1,6 +1,5 @@
 pipeline {
     	agent any
-	tools { git 'git' }
 	stages {
 	    stage('Build'){
 		steps{
@@ -8,8 +7,8 @@ pipeline {
 		    echo "mourad"
 		}
 	     }
-	     tools { git 'git' }
 	     stage('EnvInitialization') {
+		     tools { git 'git' }
 		     steps{
 			   script {
 				workspace = pwd()
