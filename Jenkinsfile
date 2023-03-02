@@ -8,6 +8,7 @@ pipeline {
 		    echo "mourad"
 		}
 	     }
+	     tools { git 'git' }
 	     stage('EnvInitialization') {
 		     steps{
 			   script {
