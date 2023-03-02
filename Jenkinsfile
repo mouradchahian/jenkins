@@ -12,7 +12,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat "git clone git@github.com:mouradchahian/jenkins.git"
+			   bat "git"
 		     }
 	   }
 	}
