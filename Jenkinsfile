@@ -10,7 +10,7 @@ pipeline {
 	     stage('EnvInitialization') {
 		     steps{
 			   bat script: $/
-			     cmd /c git
+			     start cmd.exe /c echo 'hhh'
     			   /$
 		     }
 	   }
