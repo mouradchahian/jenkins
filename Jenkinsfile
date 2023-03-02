@@ -1,6 +1,6 @@
 node() {
    stage('Build'){
-	cmd_exec('echo "git -v"')
+	cmd_exec('echo "git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git /tmp"')
    }
 }
 def cmd_exec(command) {
