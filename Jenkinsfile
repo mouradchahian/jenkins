@@ -6,6 +6,6 @@ node() {
 	}
 	stage('Build'){
 		    checkout scm
-		    bat(returnStdout: true, script: "echo 'hello'").trim()
+		    bat(returnStdout: true, script: "git -v").trim()
 	}
 }
