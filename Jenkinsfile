@@ -1,7 +1,7 @@
 pipeline {
     	agent any
 	tools {
-        	git "Default"
+        	git "gitbin"
     	}
 	stages {
 	    stage('Build'){
@@ -12,7 +12,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat "C:\Users\mchahian\AppData\Local\Programs\Git\cmd\git.exe"
+			   bat "git"
 		     }
 	   }
 	}
