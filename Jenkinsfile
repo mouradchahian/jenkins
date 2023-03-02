@@ -12,7 +12,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat "git"
+			   bat "C:\Users\mchahian\AppData\Local\Programs\Git\cmd\git.exe"
 		     }
 	   }
 	}
