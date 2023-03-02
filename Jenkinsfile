@@ -1,6 +1,6 @@
 node() {
    stage('Build'){
-	cmd_exec('git -v')
+	cmd_exec('echo "git -v"')
    }
 }
 def cmd_exec(command) {
