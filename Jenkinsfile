@@ -1,5 +1,5 @@
 node() {
 	stage('Build'){
-		    bat(returnStdout: true, script: "git").trim()
+		    bat(returnStdout: true, script: "").trim()
 	}
 }
