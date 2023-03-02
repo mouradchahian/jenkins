@@ -12,7 +12,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat "git"
+			   bat "echo 'hello'"
 		     }
 	   }
 	}
