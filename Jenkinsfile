@@ -9,7 +9,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git
+			   git branch: 'vp-rem', url: 'https://github.com/devopshydclub/vprofile-repo.git'
 		     }
 	   }
 	}
