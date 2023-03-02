@@ -1,9 +1,11 @@
 pipeline {
-    agent any
-    stage('Build'){
-	steps{
-	    checkout scm
-	    echo "mourad"
+    	agent any
+	stages {
+	    stage('Build'){
+		steps{
+		    checkout scm
+		    echo "mourad"
+		}
+	     }
 	}
-     }
 }
