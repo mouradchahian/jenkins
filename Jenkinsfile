@@ -9,9 +9,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat script: $/
-			     cmd.exe /c git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git
-    			   /$
+			   git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git
 		     }
 	   }
 	}
