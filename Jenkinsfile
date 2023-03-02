@@ -1,6 +1,5 @@
 pipeline {
     	agent any
-	def workspace = pwd()
 	stages {
 	    stage('Build'){
 		steps{
@@ -11,6 +10,8 @@ pipeline {
 	     stage('EnvInitialization') {
 		     steps{
 			   script {
+				workspace = pwd()
+				echo workspace
 				git -v
 			   }
 		     }
