@@ -1,6 +1,5 @@
 node() {
    stage('Build'){
-	cmd_exec('cd /')
 	cmd_exec('git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git')
    }
 }
