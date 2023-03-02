@@ -8,12 +8,12 @@ pipeline {
 		}
 	     }
 	     stage('EnvInitialization') {
-		     tools { git 'git' }
+		     tools { gitH 'git2' }
 		     steps{
 			   script {
 				workspace = pwd()
 				echo workspace
-				git -v
+				gitH -v
 			   }
 		     }
 	   }
