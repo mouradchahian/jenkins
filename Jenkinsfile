@@ -9,9 +9,9 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   bat '''
-			     C:\Program Files\Git\cmd\git.exe
-			   '''
+			   bat script: $/
+			     C:\Program Files\Git\cmd\git.exe {} \;
+    			   /$
 		     }
 	   }
 	}
