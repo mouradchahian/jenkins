@@ -9,7 +9,9 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   git branch: 'vp-rem', url: 'https://github.com/devopshydclub/vprofile-repo.git'
+			   script {
+				git -v
+			   }
 		     }
 	   }
 	}
