@@ -3,6 +3,7 @@ pipeline {
 
 	    stage('Build'){
 	        steps{
+		   checkout scm
 	           echo "mourad"
 	        }
 
