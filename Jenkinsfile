@@ -1,5 +1,6 @@
 pipeline {
     	agent any
+	tools { git 'C:\Program Files\Git\cmd\git.exe' }
 	stages {
 	    stage('Build'){
 		steps{
