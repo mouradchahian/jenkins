@@ -9,7 +9,7 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   sh "git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git"
+			   sh "git clone git@github.com:mouradchahian/jenkins.git"
 		     }
 	   }
 	}
