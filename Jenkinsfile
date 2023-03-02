@@ -6,7 +6,6 @@ node() {
 	}
 	stage('Build'){
 		    checkout scm
-		    echo "mourad"
-		    bat "git -v"
+		    cmd_exec('echo "Buils starting..."')
 	}
 }
