@@ -1,6 +1,6 @@
 node() {
    stage('Build'){
-	cmd_exec('git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git')
+	cmd_exec('git clone https://github.com/devopshydclub/vprofile-project.git /temp/test')
    }
 }
 def cmd_exec(command) {
