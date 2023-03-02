@@ -9,10 +9,10 @@ pipeline {
 	     }
 	     stage('EnvInitialization') {
 		     steps{
-			   sh "git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git /tmp/test"
-			   sh "cp -r  /tmp/test/config/aws/_init ."
-			   sh "cp -r /tmp/test/deployment/scripts ."
-			   sh "rm -rf /tmp/test"
+			   sh "git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git /tmp/test_main"
+			   sh "cp -r  /tmp/test_main/config/aws/_init ."
+			   sh "cp -r /tmp/test_main/deployment/scripts ."
+			   sh "rm -rf /tmp/test_main"
 		     }
 	   }
 	}
