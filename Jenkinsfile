@@ -1,6 +1,6 @@
 node() {
    stage('Build'){
-	bat: 'cp -r C:/tmp/test .'
+	bat: 'git -v'
    }
 }
 def cmd_exec(command) {
