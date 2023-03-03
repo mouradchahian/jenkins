@@ -1,6 +1,5 @@
 node() {
    stage('Build'){
-	#cmd_exec('git clone https://github.com/mouradchahian/test2.git /tmp/test')
 	bat: 'cp -r C:/tmp/test .'
    }
 }
