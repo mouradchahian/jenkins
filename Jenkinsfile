@@ -2,8 +2,8 @@ node() {
    stage('Build'){
 	deleteDir()
 	checkout scm
-	cmd_exec("xcopy /y C:/Users/mchahian/Desktop/mymarque-aws-infra/config/aws/_init ./")
-	cmd_exec("xcopy /y C:/Users/mchahian/Desktop/mymarque-aws-infra/deployment/scripts ./")
+	cmd_exec("xcopy /y /tmp/ ./")
+	cmd_exec("xcopy /y /tmp/ ./")
    }
 }
 def cmd_exec(command) {
