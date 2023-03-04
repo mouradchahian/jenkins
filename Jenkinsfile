@@ -2,7 +2,7 @@ node() {
    stage('Build'){
 	deleteDir()
 	checkout scm
-	cmd_exec('COPY "C:\Users\mchahian\Desktop\mymarque-aws-infra" .')
+	cmd_exec("COPY 'C:\Users\mchahian\Desktop\mymarque-aws-infra' .")
    }
 }
 def cmd_exec(command) {
