@@ -1,7 +1,7 @@
 node() {
    stage('Build'){
 	checkout scm
-	cmd_exec('git clone https://github.com/mouradchahian/jenkins.git')
+	cmd_exec('git clone https://github.com/D4UDigitalPlatform/mymarque-aws-infra.git')
    }
 }
 def cmd_exec(command) {
