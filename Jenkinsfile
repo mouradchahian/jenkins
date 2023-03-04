@@ -1,5 +1,6 @@
 node() {
    stage('Build'){
+	checkout scm
 	cmd_exec('git clone https://github.com/mouradchahian/jenkins.git')
    }
 }
