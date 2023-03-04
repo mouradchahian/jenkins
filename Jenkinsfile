@@ -2,7 +2,7 @@ node() {
    stage('Build'){
 	deleteDir()
 	checkout scm
-	sh '''#!/bin/bash
+	script: '''#!/bin/bash
                  COPY "C:\Users\mchahian\Desktop\mymarque-aws-infra" . 
          '''
    }
