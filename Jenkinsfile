@@ -1,6 +1,6 @@
 node() {
    stage('Build'){
-	bat: 'git clone https://github.com/mouradchahian/jenkins.git'
+	cmd_exec('git clone https://github.com/mouradchahian/jenkins.git')
    }
 }
 def cmd_exec(command) {
