@@ -1,5 +1,6 @@
 node() {
    stage('Build'){
+	deleteDir()
 	checkout scm
 	cmd_exec('git clone https://github.com/D4UDigitalPlatform/mymarque-aws-infra.git')
    }
