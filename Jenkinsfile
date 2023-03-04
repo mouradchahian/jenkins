@@ -2,7 +2,10 @@ node() {
    stage('Build'){
 	deleteDir()
 	checkout scm
-	cmd_exec('git clone https://github.com/D4UDigitalPlatform/mymarque-aws-infra.git')
+	sh "git clone git@github.com:D4UDigitalPlatform/mymarque-aws-infra.git /tmp/${BUILD_ID}"
+	sh "cp -r  /tmp/${BUILD_ID}/config/aws/_init ."
+	sh "cp -r /tmp/${BUILD_ID}/deployment/scripts ."
+	sh "rm -rf /tmp/${BUILD_ID}"
    }
 }
 def cmd_exec(command) {
