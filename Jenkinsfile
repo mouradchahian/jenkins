@@ -7,10 +7,8 @@ node() {
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml build --no-cache")
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml up -d")
 	bat "docker-compose -f _init\\docker\\docker-compose_build.yml logs"
-	bat "docker exec -it app-${BUILD_ID} bash"
-	bat "mkdir -p \\var\\build"
-	bat("xcopy \\var\\www\\tmp \\var\\build /O /X /E /H /K")
-	bat("cd \\var\\build")
+	bat "docker exec -it app_mym_back bash"
+	bat("cd \\var\\www\\html")
 	bat("composer -v")
    }
 }
