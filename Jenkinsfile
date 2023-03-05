@@ -5,7 +5,7 @@ node() {
 	bat("xcopy C:\\Users\\mchahian\\Desktop\\mymarque-aws-infra\\config\\aws . /O /X /E /H /K")
 	bat("xcopy C:\\Users\\mchahian\\Desktop\\mymarque-aws-infra\\deployment . /O /X /E /H /K")
 	cmd_exec("docker-compose -p app_${BUILD_ID} -f _init\\docker\\docker-compose_dev.yml build --no-cache")
-	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml up -d")
+	cmd_exec("docker-compose -p app_${BUILD_ID} -f _init\\docker\\docker-compose_dev.yml up -d")
 	bat "docker-compose -f _init\\docker\\docker-compose_build.yml ps"
 	bat "docker exec app_${BUILD_ID} bash -c 'bash \\var\\www\\tmp\\scripts\\install.sh'"
    }
