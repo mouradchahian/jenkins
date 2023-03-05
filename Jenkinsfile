@@ -7,7 +7,7 @@ node() {
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml build")
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml up -d")
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_build.yml ps")
-	bat('docker exec app_mym_back bash -c "cd /var/www/html"')
+	bat('docker exec app_mym_back bash -c "cd /var/www/html && exit"')
    }
 }
 def cmd_exec(command) {
