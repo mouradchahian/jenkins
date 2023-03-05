@@ -6,10 +6,7 @@ node() {
 	bat("xcopy C:\\Users\\mchahian\\Desktop\\mymarque-aws-infra\\deployment . /O /X /E /H /K")
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml build --no-cache")
 	cmd_exec("docker-compose -f _init\\docker\\docker-compose_dev.yml up -d")
-	bat "docker-compose -f _init\\docker\\docker-compose_build.yml logs"
-	bat "docker exec -it app_mym_back bash"
-	bat("cd \\var\\www\\html")
-	bat("composer -v")
+	bat "docker-compose -f _init\\docker\\docker-compose_build.yml ps"
    }
 }
 def cmd_exec(command) {
